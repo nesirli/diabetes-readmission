@@ -32,4 +32,7 @@ serve-api:
 	uv run uvicorn src.diabetes_readmission.app.main:app --reload
 
 lint:
-	uv run ruff check src tests
+	uv run ruff check src tests --fix
+
+format:
+	uv run ruff format src tests
