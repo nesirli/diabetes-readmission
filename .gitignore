@@ -21,3 +21,6 @@ wheels/
 mlruns/
 mlflow.db
 plots/
+
+# Data files
+data/
