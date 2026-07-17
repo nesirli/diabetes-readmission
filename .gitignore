@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment files
+.env
+
+# IDE specific files
+.idea
+.vscode
+
+# Model specific files
+*.joblib
+mlruns/
+mlflow.db
+plots/
