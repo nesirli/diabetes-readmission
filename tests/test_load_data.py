@@ -1,6 +1,6 @@
 import pandas as pd
 
-from src.diabetes_readmission.ingest.load_data import load_data
+from diabetes_readmission.ingest.load_data import load_data
 
 
 def test_load_data():
