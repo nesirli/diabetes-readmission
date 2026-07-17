@@ -4,12 +4,15 @@ from functools import lru_cache
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 
+
 class Settings(BaseSettings):
     """Application settings."""
 
     model_config = SettingsConfigDict(env_file=ROOT_DIR / ".env")
 
     data_dir: Path = ROOT_DIR / "data"
+    raw_data_dir: Path = data_dir / "raw"
+    processed_data_dir: Path = data_dir / "processed"
     plots_dir: Path = ROOT_DIR / "plots"
     best_params_dir: Path = data_dir / "best_params"
 
@@ -23,5 +26,6 @@ class Settings(BaseSettings):
 @lru_cache
 def get_settings() -> Settings:
     return Settings()
+
 
 settings = get_settings()
