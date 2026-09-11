@@ -16,6 +16,13 @@ wheels/
 .idea
 .vscode
 
+# OS files
+.DS_Store
+
+# Notebook checkpoints and cache
+.ipynb_checkpoints/
+__marimo__/
+
 # Model specific files
 *.joblib
 mlruns/
